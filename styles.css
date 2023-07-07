@@ -1,0 +1,91 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #53585d;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Content */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    /* Sidebar */
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {
+      float: none;
+    }
+    
+    /* Content */
+    div.content {
+      margin-left: 0;
+      padding: 16px;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      position: fixed;
+    }
+    
+    /* Content */
+    div.content {
+      margin-left: 250px;
+      padding: 16px;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      position: fixed;
+    }
+    
+    /* Content */
+    div.content {
+      margin-left: 250px;
+      padding: 16px;
+      height: auto;
+    }
+  }
+  

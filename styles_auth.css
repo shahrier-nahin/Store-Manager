@@ -1,0 +1,60 @@
+body {
+    background-image: url(cover.jpeg);
+    background-size: cover;
+}
+
+.content {
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content form {
+    margin-top: 20px;
+}
+
+.content label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.content input[type="text"],
+.content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.content input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.content p {
+    color: #ccc;
+}
+
+.content a {
+    color: #fff;
+}

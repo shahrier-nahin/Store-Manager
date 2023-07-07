@@ -1,0 +1,55 @@
+CREATE TABLE supplier (
+  s_id INT(11) NOT NULL,
+  s_name VARCHAR(50) NOT NULL,
+  s_number VARCHAR(20) NOT NULL,
+  PRIMARY KEY (s_id)
+);
+
+
+Product & Inventory done by Aroshi
+
+CREATE TABLE product (
+  p_id INT(11) NOT NULL,
+  p_name VARCHAR(50) NOT NULL,
+  p_price VARCHAR(20) NOT NULL,
+  PRIMARY KEY (p_id)
+);
+
+
+
+CREATE TABLE inventory(
+  i_id INT(11) NOT NULL,
+  i_name VARCHAR(50) NOT NULL,
+  i_quantity VARCHAR(20) NOT NULL,
+  PRIMARY KEY (i_id)
+);
+
+CREATE TABLE employees (
+  emp_id INT(11) NOT NULL,
+  emp_name VARCHAR(50) NOT NULL,
+  emp_number VARCHAR(20) NOT NULL,
+  emp_address VARCHAR (255) NOT NULL,
+  PRIMARY KEY (emp_id)
+);
+
+CREATE TABLE customers (
+  cust_id INT(11) NOT NULL,
+  cust_name VARCHAR(50) NOT NULL,
+  cust_number VARCHAR(20) NOT NULL,
+  cust_address VARCHAR (255) NOT NULL,
+  PRIMARY KEY (cust_id)
+);
+
+CREATE TABLE orders(
+  order_no INT(11) NOT NULL,
+  o_name VARCHAR(50) NOT NULL,
+  o_quantity INT(11) NOT NULL,
+  o_date DATE NOT NULL,
+  PRIMARY KEY (order_no)
+);
+
+CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
